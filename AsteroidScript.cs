@@ -22,7 +22,7 @@ public class AsteroidScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Laser")
+        if (other.tag == "laser")
         {
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
